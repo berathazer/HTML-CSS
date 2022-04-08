@@ -1,0 +1,193 @@
+:root{
+    --primary: #0d6efd;
+    --secondary: #6c757d;
+    --success: #198754;
+    --info: #0dcaf0;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #212529;
+}
+
+
+
+/* Text Colors */
+
+.text-primary{
+    color: var(--primary);
+}
+
+.text-secondary{
+    color: var(--secondary);
+}
+
+.text-success{
+    color: var(--success);
+}
+
+.text-info{
+    color: var(--info);
+}
+
+.text-warning{
+    color: var(--warning);
+}
+
+.text-danger{
+    color: var(--danger);
+}
+
+.text-dark{
+    color: var(--dark);
+}
+
+.text-light{
+    color: var(--light);
+}
+
+
+
+
+/* Background Colors*/
+
+.bg-primary{
+    background-color: var(--primary);
+}
+
+.bg-secondary{
+    background-color: var(--secondary);
+}
+
+.bg-success{
+    background-color: var(--success);
+}
+
+.bg-info{
+    background-color: var(--info);
+}
+
+.bg-warning{
+    background-color: var(--warning);
+}
+
+.bg-danger{
+    background-color: var(--danger);
+}
+
+.bg-dark{
+    background-color: var(--dark);
+}
+
+.bg-light{
+    background-color: var(--light);
+}
+
+
+/*Buttons*/
+
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.btn-primary{
+    color: white;
+    background-color: var(--primary);
+}
+
+.btn-secondary{
+    color: white;
+    background-color: var(--secondary);
+}
+
+.btn-success{
+    color: white;
+    background-color: var(--success);
+}
+
+.btn-info{
+    color: white;
+    background-color: var(--info);
+}
+
+.btn-warning{
+    color: white;
+    background-color: var(--warning);
+}
+
+.btn-darger{
+    color: white;
+    background-color: var(--danger);
+}
+
+.btn-dark{
+    color: white;
+    background-color: var(--dark);
+}
+
+.btn-light{
+    color: black;
+    background-color: var(--light);
+}
+
+/**/
+
+
+
+
+
+
+/**/
+
+
+
+
+/*Flex Items*/
+
+.flex-items{
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    height: 100%;
+}
+
+.flex-items > div {
+    padding: 2rem;
+    flex-basis: 100%; 
+}
+
+
+/**/
+
+
+
+
+
+
+
+
+/*Main Section*/
+
+.flex-items i{
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    font-size: 4rem;
+}
+
+.flex-items h3{
+    color: var(--secondary);
+}
+
+/**/
+
+
+
+
+
+

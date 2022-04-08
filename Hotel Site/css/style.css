@@ -1,0 +1,570 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #333;
+}
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/*Header Main*/
+
+.main{
+    background:url("../img/bg-1.jpeg") no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.main::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.main *{
+    z-index: 1;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 90vh;
+    color: white;
+    row-gap: 1rem;
+    
+}
+.content h1{
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.content p{
+    padding: .5rem;  
+}
+
+
+/**/
+
+
+
+/*Navbar*/
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 0 2rem;
+    position: fixed;
+    width: 100%;
+    opacity: 0.9;
+    height: 70px;
+    z-index: 10;
+}
+
+.brand{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+
+.navbar a{
+    color: white;
+    border: 2px solid transparent;
+}
+
+
+.nav-item{
+    display: inline-flex;
+    padding: 0 1rem;
+ 
+}
+
+
+
+.nav-items a:hover{
+    border-bottom: 2px solid var(--warning);
+}
+
+.navbar .nav-items .nav-item:last-child{
+    display: none;
+}
+/**/
+
+
+
+/*About*/
+
+.flex-column{
+    display: flex;
+    flex-direction: row;
+}
+.left img{
+   width: 100%;
+   height: 100%;
+}
+.flex-column .right ,.flex-column .left{
+    width: 100%;
+    flex: 1;
+}
+
+.flex-column .right .footer-content{
+    display: flex;
+    
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem 3rem;
+    color: white;
+    gap: 2rem;
+}
+.footer-content h2{
+    font-size: 4.5rem;
+    font-weight: 400;
+}
+.right a{
+    color: white;
+    border: 1px solid white;
+    padding: 0.5rem 2rem;
+}
+
+.flex-column .left .img,
+.flex-column .right .footer-content{
+    height: 100%;
+}
+
+
+/**/
+
+
+
+/*Photo Gallery*/
+.gallery-container{
+    padding: 3rem 1rem;
+}
+
+.g-header{
+    text-align: center;
+    padding: 3rem 1rem;
+}
+.g-header h2{
+    font-size: 4rem;
+    font-weight: 400;
+}
+.g-header p{
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.gallery-container .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 .4rem;
+    flex-direction: row;
+}
+
+
+.gallery .g-item{   
+    flex:25%;
+    padding: 0 .4rem;
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
+}
+
+.g-item img{
+
+    transition: transform 0.5s ease-out;
+}
+.g-item img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+/**/
+
+
+/*Room Cards*/
+#footerCards{
+    padding: 2rem 0;
+}
+
+#footerCards h2{
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 3rem;
+}
+#footerCards p{
+    font-size: 2rem;
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.f-cards .cards{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 50px;
+    justify-content: center;
+}
+
+.f-cards .card{
+
+    display: flex;
+    justify-content: space-between;
+    max-width: 420px;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.f-cards .card img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.f-cards .card img:hover{
+    cursor: pointer;
+}
+
+.f-cards .card-body{
+    background-color: var(--warning);
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 300;
+}
+
+
+/*Person Cards*/
+#persons{
+    padding: 3rem 1rem;
+}
+#persons h2{
+    font-size: 4rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#persons h3{
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+#persons p{
+    font-size: 2rem;
+    padding: 2rem 0;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+#persons img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+#persons img:hover{
+    cursor: pointer;
+}
+
+
+#persons .cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2rem 1rem;
+    text-align: center;
+
+}
+
+#persons .card{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+/**/
+
+
+/*Contact Block*/
+
+#Contact .container{
+    display: flex;
+}
+
+
+.container .img,
+.container #form{
+    flex: 1;
+    
+}
+.container img{
+    background-position: center;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.container #form{
+    padding: 2rem;
+}
+.container form h1{
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0;
+
+}
+
+.container #form label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.container #form input{
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    height: 4rem;
+  
+}
+
+
+.container #form input::placeholder{
+    font-size: 1.6rem;
+}
+
+
+.container #form button{
+    display: block;
+    width: 100%;
+    margin-top: 3rem;
+    border: none;
+    padding: 1.2rem 0;
+}
+
+.container #form button:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+/**/
+
+
+
+/*Footer*/
+
+#mainFooter .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+#mainFooter .footer .social{
+    display: flex;
+}
+#mainFooter .footer .social ul{
+    display: inline-flex;
+}
+
+#mainFooter .footer .social ul li{
+    padding: 1rem;
+    color: var(--danger);
+}
+
+#mainFooter .footer .social ul li:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+/**/
+
+
+.column2{
+    flex-direction: row-reverse;
+}
+
+
+
+@media (max-width:768px){
+    
+    /*Navbar*/
+
+
+    .navbar .nav-items .nav-item:last-child{
+        display: block;
+        position: absolute;
+        top: 3rem;
+        right: 2rem;
+    }
+
+    .main .navbar{
+        display: flex;
+        padding: 2rem 0;
+        height: 120px;
+        flex-direction: column;
+    }
+
+
+
+    .responsive .nav-items .nav-item:not(:last-child){
+        display: none;
+    }
+    .responsive .nav-items .nav-item:last-child{
+        display: block;
+        position: absolute;
+        top: 3rem;
+        right: 2rem;
+    }
+
+    .responsive{
+        max-height: 80px;
+    }
+    .responsive .brand{
+        align-self:flex-end;
+        
+    }
+    #responseBtn:hover{
+        cursor: pointer;
+        opacity: 0.8;
+    }
+
+    /**/
+
+    /*Services*/
+    #services .flex-items{
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+    /**/
+
+    /*About*/
+
+    #about .flex-column{
+        display: flex;
+        flex-direction: column-reverse;     
+    } 
+    #about .flex-column h2{
+        font-size: 3rem;
+    } 
+
+    #about .flex-column img{
+        height: 100%;
+    } 
+    #about .flex-column .footer-content{
+        padding: 2rem 2rem;
+        display: inline-flex;
+    } 
+
+        /*Photo Gallery*/
+        
+        #gallery .gallery{
+            flex-direction: column;
+        }
+        #gallery .gallery img{
+            padding: 2rem;
+        }
+
+        /**/
+   
+
+    /**/
+
+
+
+    /*Room Cards*/
+    #footerCards .card-body h2{
+        font-size: 3rem;
+    }
+    #footerCards .card {
+        max-width: 600px;
+    }
+    /**/
+
+
+    /*Person Cards*/
+
+    #persons .cards{
+        flex-direction: column;
+        
+    }
+    #persons .card{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /**/
+
+
+    /*Contact Form*/
+    #Contact .container{
+        flex-direction: column;
+        
+    }
+    #Contact{
+        padding: 10px;
+    }
+
+
+    /**/
+
+
+    /**/
+
+ 
+    /**/
+
+}
+
+@media(min-width:950px) and (max-width:1300px){
+    #persons .card{
+       
+        max-width: 300px;
+    }
+}
+
+@media(min-width:769px) and (max-width:949px){
+    #persons .cards{
+       flex-direction: column;
+    }
+
+    #persons .card{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
+    }
+
+}
